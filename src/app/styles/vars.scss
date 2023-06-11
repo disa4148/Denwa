@@ -1,0 +1,27 @@
+// text colors variables
+$color-text-dark: #000000;
+$color-text-light: #ffffff;
+
+// main light colors variables
+$color-main-light-160: darken(rgba($color-main-light-100, 60%));
+$color-main-light-140: darken(rgba($color-main-light-100, 40%));
+$color-main-light-120: darken(rgba($color-main-light-100, 20%));
+$color-main-light-100: rgba(42, 98, 183, 1);
+$color-main-light-80: rgba(42, 98, 183, 0.8);
+$color-main-light-60: rgba(42, 98, 183, 0.6);
+$color-main-light-40: rgba(42, 98, 183, 0.4);
+$color-main-light-20: rgba(42, 98, 183, 0.2);
+
+// main dark colors variables
+$color-main-dark-100: rgba(11, 9, 10, 1);
+$color-main-dark-80: rgba(11, 9, 10, 0.8);
+$color-main-dark-60: rgba(11, 9, 10, 0.6);
+$color-main-dark-40: rgba(11, 9, 10, 0.4);
+$color-main-dark-20: rgba(11, 9, 10, 0.2);
+
+// additional error color variables
+$color-additional-error-100: rgba(220, 38, 38, 1);
+$color-additional-error-80: rgba(220, 38, 38, 0.8);
+$color-additional-error-60: rgba(220, 38, 38, 0.6);
+$color-additional-error-40: rgba(220, 38, 38, 0.4);
+$color-additional-error-20: rgba(220, 38, 38, 0.2);
