@@ -1,0 +1,270 @@
+{
+  "v": "4.8.0",
+  "meta": { "g": "LottieFiles AE 3.4.5", "a": "", "k": "", "d": "", "tc": "" },
+  "fr": 60,
+  "ip": 0,
+  "op": 150,
+  "w": 256,
+  "h": 25,
+  "nm": "Pre-comp 1",
+  "ddd": 0,
+  "assets": [
+    {
+      "id": "image_0",
+      "w": 256,
+      "h": 25,
+      "u": "",
+      "p": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAAZCAYAAADe3PCBAAAACXBIWXMAAAABAAAAAQBPJcTWAAAAJHpUWHRDcmVhdG9yAAAImXNMyU9KVXBMK0ktUnBNS0tNLikGAEF6Bs5qehXFAAAEzElEQVR4nO1c0XHbMAx97fU/3iDaoNmg6gT1BtEG9QbRBkknqLKBM0GZDZwNlA2cCdwPVldXJukHEpJIp+8Ol9YSwCdZAkEANAAcSFkKNwD2AV5mMWZ2bG0+FcLXO0gdwbER8NgSHA4AOoHNARVp+wD7/bPYBey0ETwHdAK+RcnHhJsyF3awD/vbwjzmQg/ZiyrBWnDuVvm8Y/QAXojz3mC/fwY3AD4Hjj+QdrR1s0YJDgCwD0G7NIkZsQXwNIHdb7CzL8uBgYliwkUOEufSBI49wkZVsdgBeE7Qzxq5LwGOYXD5S4ABK9iZUnMJcACwEXAIhdQHxM3+A27O2D5AFrGElk1VAs8BNcG3OPmkcGPmRAvgV6TuCrL1JGtzKuxhZ7XY6/VhAz6k7QDcB46nOIAdgFcA157jbwL7awBXnmNPsI40FQZ22RJaZhSJkiIA4HRWMqReDUXPGRCWD4vWM05N6huHLusIK8/Yg6Q6wIeAbYlzCSUs60SOx2gC4xQpU0QAtfD8HjIP/QDgp3CMktHCznCaM88GXKKxh3+WfkHauhqwEcZ3zzHWAaxgcxsuPEPXIXew34cvaikS2hFAjCeSZFmrka4h9epIblJh+UjgKoXWpK7BKUfJi+ubpSW5hBB8a3c2uth49A+YppoSGq9EycIBSJ1Af6RnSJ06gdvSDgA4ffBqUs/AzbMh9X3JuorUP4fOYdsI9H2Jyl6J3xgrcH0apUg2DkDyUB2v+YyAmzYMTq+B5VNDXto8vu6a1DFw32vJGrsf6bK1eQZrBzc2ughVEhpFjmO0gXGLktz6AGryPM0HcEncQZYzaaDXECXpCTBn/p8ClyNinVPj+VxSQYhBN6HtWZGbA6iWJrAAtuDXu0NpUAtsnX38MnWKHIB/m55ewIfvjefzB6QnKEPoYZuLikduDuA94gryktcPpbHZUHuLv5HHK/gILMbBpNb+3zBP6247wxiT478DyANfIHugWugkua7B9wRsR3/PYQ3+mmIcQBOwNeXsP6DHBbQH5+YA+qUJLAhJPmAPvXvFRgFm9Pccht4FxsHsYV8mNroI1f5bhpwS5hxrEuTmAAx5nnZLby6Q5AO0IAnT2eTaCsDtn383Avups/8j5p1EDC4gCsilDPje+gB8fFh9FsYzTkzJjHUWzZFtNhyvwDt2X+2/JvU10Xi4lCJZOID32AkY4tOSNhiYwDiDaJfMxi+oZFffOfhq/0ZxDCl6B58iZIq9AF+F5+8gS9poPky54g72gTYzjTf0BPQKtiqc7ltooOdkGs/nS/5oR4uC96doRwBT41J2A57js4dOPsCQvLV6+317B7RyG6423F7JdiyKbQ/OLQl4DjXid8UZAB+UZcoEkLQ/IBVaDsAXoTVKtl21/1bBdgr2KPhnw0qKAAziZ9zc+NQO3SlmZhdHn6RWV1x9/YNotG+79v33CnY1sEIGM7pUSvpFoA1sw8x7wz3sSzzH/gf2dwJ8COVnhp6A2Ovw1f47gY0N5EuRnhxjD1uGvBXaXxwlRAChXV9mOVqzRADDLBe7hnZx9ElKBx0zA6aEyY3DniRPUhH8fPdk6jEWkxJyABWWfclzwDXmWWNeIT4CYKozsbZ9uh14pxU79hX4ylOPwjYJ/QYHcKmGlJTa5wAAAABJRU5ErkJggg==",
+      "e": 1
+    }
+  ],
+  "layers": [
+    {
+      "ddd": 0,
+      "ind": 1,
+      "ty": 2,
+      "nm": "denwa logotype.ai",
+      "cl": "ai",
+      "refId": "image_0",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": [0.667], "y": [1] },
+              "o": { "x": [0.167], "y": [0.167] },
+              "t": 39,
+              "s": [0]
+            },
+            { "t": 40, "s": [100] }
+          ],
+          "ix": 11
+        },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": 0.667, "y": 0.667 },
+              "o": { "x": 0.167, "y": 0.167 },
+              "t": 0,
+              "s": [-241, 12.5, 0],
+              "to": [0, 0, 0],
+              "ti": [0, 0, 0]
+            },
+            {
+              "i": { "x": 0.667, "y": 1 },
+              "o": { "x": 0.167, "y": 0.167 },
+              "t": 50,
+              "s": [-241, 12.5, 0],
+              "to": [0, 0, 0],
+              "ti": [0, 0, 0]
+            },
+            { "t": 140, "s": [5, 12.5, 0] }
+          ],
+          "ix": 2
+        },
+        "a": { "a": 0, "k": [5, 12.5, 0], "ix": 1 },
+        "s": { "a": 0, "k": [100, 100, 100], "ix": 6 }
+      },
+      "ao": 0,
+      "hasMask": true,
+      "masksProperties": [
+        {
+          "inv": false,
+          "mode": "a",
+          "pt": {
+            "a": 0,
+            "k": {
+              "i": [
+                [0, 0],
+                [0, 0],
+                [0, 0],
+                [0, 0]
+              ],
+              "o": [
+                [0, 0],
+                [0, 0],
+                [0, 0],
+                [0, 0]
+              ],
+              "v": [
+                [259.562, -0.812],
+                [246.062, -0.812],
+                [246.062, 26.062],
+                [259.562, 26.062]
+              ],
+              "c": true
+            },
+            "ix": 1
+          },
+          "o": { "a": 0, "k": 100, "ix": 3 },
+          "x": { "a": 0, "k": 0, "ix": 4 },
+          "nm": "Mask 2"
+        }
+      ],
+      "ip": 0,
+      "op": 150,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 2,
+      "ty": 2,
+      "nm": "denwa logotype.ai",
+      "cl": "ai",
+      "tt": 1,
+      "refId": "image_0",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": { "a": 0, "k": [5, 12.5, 0], "ix": 2 },
+        "a": { "a": 0, "k": [5, 12.5, 0], "ix": 1 },
+        "s": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": [0.667, 0.667, 0.667], "y": [1, 1, 1] },
+              "o": { "x": [0.167, 0.167, 0.167], "y": [0.167, 0.167, 16.667] },
+              "t": 21,
+              "s": [0, 0, 100]
+            },
+            { "t": 39, "s": [100, 100, 100] }
+          ],
+          "ix": 6
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 150,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 3,
+      "ty": 4,
+      "nm": "Shape Layer 1",
+      "tt": 1,
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": {
+          "a": 1,
+          "k": [
+            {
+              "i": { "x": 0.667, "y": 1 },
+              "o": { "x": 0.167, "y": 0.167 },
+              "t": 40,
+              "s": [-241, 12.5, 0],
+              "to": [0, 0, 0],
+              "ti": [0, 0, 0]
+            },
+            {
+              "i": { "x": 0.667, "y": 1 },
+              "o": { "x": 0.167, "y": 0.167 },
+              "t": 60,
+              "s": [-224, 12.5, 0],
+              "to": [0, 0, 0],
+              "ti": [0, 0, 0]
+            },
+            { "t": 140, "s": [5, 12.5, 0] }
+          ],
+          "ix": 2
+        },
+        "a": { "a": 0, "k": [-379, 0, 0], "ix": 1 },
+        "s": { "a": 0, "k": [100, 100, 100], "ix": 6 }
+      },
+      "ao": 0,
+      "shapes": [
+        {
+          "ty": "gr",
+          "it": [
+            {
+              "ty": "rc",
+              "d": 1,
+              "s": { "a": 0, "k": [564, 312], "ix": 2 },
+              "p": { "a": 0, "k": [0, 0], "ix": 3 },
+              "r": { "a": 0, "k": 0, "ix": 4 },
+              "nm": "Rectangle Path 1",
+              "mn": "ADBE Vector Shape - Rect",
+              "hd": false
+            },
+            {
+              "ty": "st",
+              "c": { "a": 0, "k": [1, 1, 1, 1], "ix": 3 },
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 0, "ix": 5 },
+              "lc": 1,
+              "lj": 1,
+              "ml": 4,
+              "bm": 0,
+              "nm": "Stroke 1",
+              "mn": "ADBE Vector Graphic - Stroke",
+              "hd": false
+            },
+            {
+              "ty": "fl",
+              "c": { "a": 0, "k": [0, 0, 0, 1], "ix": 4 },
+              "o": { "a": 0, "k": 100, "ix": 5 },
+              "r": 1,
+              "bm": 0,
+              "nm": "Fill 1",
+              "mn": "ADBE Vector Graphic - Fill",
+              "hd": false
+            },
+            {
+              "ty": "tr",
+              "p": { "a": 0, "k": [-430, -6.5], "ix": 2 },
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [107.092, 100], "ix": 3 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "o": { "a": 0, "k": 100, "ix": 7 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "nm": "Transform"
+            }
+          ],
+          "nm": "Rectangle 1",
+          "np": 3,
+          "cix": 2,
+          "bm": 0,
+          "ix": 1,
+          "mn": "ADBE Vector Group",
+          "hd": false
+        }
+      ],
+      "ip": 0,
+      "op": 150,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 4,
+      "ty": 1,
+      "nm": "White Solid 3",
+      "sr": 1,
+      "ks": {
+        "o": { "a": 0, "k": 100, "ix": 11 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "p": { "a": 0, "k": [128, 12.5, 0], "ix": 2 },
+        "a": { "a": 0, "k": [128, 12.5, 0], "ix": 1 },
+        "s": { "a": 0, "k": [235.156, 340, 100], "ix": 6 }
+      },
+      "ao": 0,
+      "sw": 256,
+      "sh": 25,
+      "sc": "#ffffff",
+      "ip": 0,
+      "op": 150,
+      "st": 0,
+      "bm": 0
+    }
+  ],
+  "markers": []
+}
