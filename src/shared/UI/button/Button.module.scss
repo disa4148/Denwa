@@ -1,0 +1,91 @@
+@import "src/app/index.scss";
+
+
+.BtnfilledLight, .BtnGhost, .BtnfilledDark, .BtnnotAllowedDark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.BtnfilledLight{
+
+  color: white;
+
+  background: $color-main-light-100;
+ 
+  &:hover {
+    background: $color-main-light-120;
+  }
+
+  &:active {
+    background: $color-main-light-100;
+  }
+
+  &:disabled {
+    background: $color-main-light-40;
+    color: $color-main-dark-10;
+  }
+
+}
+
+.BtnGhost {
+    color: black;
+    background: none;
+
+    &:hover {
+        background: $color-main-dark-10;
+    }
+
+    &:active {
+        background: $color-main-light-100;
+        color: white;
+    }
+
+    &:disabled {
+        background: none;
+        color: $color-main-dark-40;
+    }
+}
+
+.BtnfilledDark {
+    background: $color-main-dark-100;
+    color: white;
+
+    &:hover {
+        background: $color-main-dark-80;
+    }
+
+    &:active {
+        background: $color-main-dark-100;
+    }
+    &:disabled {
+        background: $color-main-dark-20;
+        color: $color-main-dark-40;
+    }
+}
+
+.BtnnotAllowedDark {
+    background: $color-main-dark-100;
+    color: white;
+
+    &:hover {
+        background: $color-main-dark-80;
+    }
+
+    &:active {
+        background: $color-additional-error-80;
+    }
+
+    &:disabled {
+        background: $color-additional-error-40;
+        color: $color-main-dark-20;
+        
+    }
+}
+
+
