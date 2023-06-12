@@ -1,12 +1,12 @@
 import Lottie from "lottie-react"
 
-import logotypeAnimation from "/public/animations/denwa logotype.json"
+import logotypeAnimation from "./denwa logotype.json"
 
-const LogotypeAnimation = () => {
+const LogotypeAnimation: React.FC = () => {
   return (
     <Lottie
       animationData={logotypeAnimation}
-      style={{ height: "25px", width: "256px", margin:"10px"}}
+      style={{ height: "25px", width: "256px", margin: "10px" }}
       autoplay={true}
       loop={false}
     />
