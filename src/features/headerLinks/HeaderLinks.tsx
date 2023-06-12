@@ -6,7 +6,7 @@ const HeaderLinks: React.FC = () => {
     <div className={styles.wrapper}>
       {headerItems.map(item => (
         // <Link to={item.path}>
-          <div className={styles.item}>{item.title}</div>
+          <div className={styles.wrapper}>{item.title}</div>
         // </Link>
       ))}
     </div>

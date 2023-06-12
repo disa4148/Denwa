@@ -19,7 +19,7 @@ export const headerItems: IHeaderItems = [
     path: "/feature",
   },
   {
-    title: "Resource",
+    title: "Ресурсы",
     path: "/resource",
   },
 ];
