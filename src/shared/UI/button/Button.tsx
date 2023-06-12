@@ -9,19 +9,19 @@ export const Button = ({ type, text }: IButton) => {
   return (
     <div>
       {type === "filledLight" && (
-        <button className={styles.BtnfilledLight}>{text}</button>
+        <button type="submit" className={styles.BtnfilledLight}>{text}</button>
       )}
 
       {type === "Ghost" && (
-      <button className={styles.BtnGhost}>{text}</button>
+      <button type="submit" className={styles.BtnGhost}>{text}</button>
       )}
 
       {type === "filledDark" && (
-        <button className={styles.BtnfilledDark}>{text}</button>
+        <button type="submit" className={styles.BtnfilledDark}>{text}</button>
       )}
 
       {type === "notAllowedDark" && (
-        <button className={styles.BtnnotAllowedDark}>{text}</button>
+        <button type="submit" className={styles.BtnnotAllowedDark}>{text}</button>
       )}
     </div>
   );

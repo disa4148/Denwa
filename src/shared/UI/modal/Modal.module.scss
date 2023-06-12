@@ -35,7 +35,7 @@
         cursor: pointer;
         padding: 5px 20px 5px 20px;
         color: white;
-        margin-top: 10%;
+        margin-top: 14%;
         font-weight: 500;
       }
       button:disabled {
@@ -79,19 +79,21 @@
       p {
         text-align: left;
         width: 280px;
-        margin-top: 3%;
+        margin-top: 5%;
         font-weight: 600;
       }
       h2 {
         text-transform: uppercase;
         color: $main-color;
         font-weight: 800;
+       
       }
       h3 {
         color: $main-bg-color-op60;
         font-weight: 400;
         max-width: 280px;
         text-align: center;
+        margin-top: 10px;
       }
   
       error {
