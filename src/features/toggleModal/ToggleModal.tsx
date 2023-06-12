@@ -1,24 +1,29 @@
 import React, { useState } from 'react'
 
 import Button from 'src/shared/UI/button/Button';
+import Modal from 'src/shared/UI/modal/Modal';
 
-export const OpenModal = () => {
+export const ToggleModal = () => {
     const [modalActive, setModalActive] = useState(false);
 
-    const toggleModal = () => {
+    const toggledModal = () => {
         setModalActive(!modalActive)
-        console.log(modalActive)
+        
     }
   return (
    <div>
-        <div onClick={() => toggleModal()}>
+        <div onClick={() => toggledModal()}>
             <Button type='Ghost' text='Sign In' />
         </div>
         {modalActive && (
             <div>
-                <h1>Modal</h1>
+                <Modal ModalActive={true} toggledModal={() => {setModalActive(!modalActive)}}>
+                    <div>Modal content</div>
+                </Modal>
             </div>
         )}
     </div>
   )
 }
+
+export default ToggleModal

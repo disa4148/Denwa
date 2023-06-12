@@ -1,0 +1,116 @@
+@import "src/app/index.scss";
+
+.wrapper {
+    display: none;
+  }
+  
+  .content {
+    padding: 20px;
+    border-radius: $main-border-radius;
+    background-color: white;
+    display: flex;
+    cursor: default;
+    animation: slide-in 0.5s ease forwards;
+  
+    @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateY(-100vh);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      button {
+        background-color: $main-color;
+        border-radius: $main-border-radius;
+        border: none;
+        cursor: pointer;
+        padding: 5px 20px 5px 20px;
+        color: white;
+        margin-top: 10%;
+        font-weight: 500;
+      }
+      button:disabled {
+        background-color: $main-bg-color;
+        border-radius: $main-border-radius;
+        border: none;
+        cursor: pointer;
+        padding: 5px 20px 5px 20px;
+        color: white;
+      }
+  
+      button:disabled:hover {
+        background-color: lighten($main-bg-color, 10%);
+        transition: 0.3s;
+      }
+  
+      button:disabled:active {
+          background-color: #dc3545;
+          transition: 0.1s;
+        }
+  
+      button:hover {
+        background-color: $main-color-hover;
+        transition: 0.3s;
+      }
+      button:active {
+        background-color: $main-color;
+        transition: 0.3s;
+      }
+      input {
+        width: 280px;
+        padding: 5px;
+        border-radius: $main-border-radius;
+        border: 1px solid $main-bg-color-op60;
+      }
+  
+      input:focus {
+          outline: 1px solid $main-color;
+          border: 1px solid $main-color;
+        }
+      p {
+        text-align: left;
+        width: 280px;
+        margin-top: 3%;
+        font-weight: 600;
+      }
+      h2 {
+        text-transform: uppercase;
+        color: $main-color;
+        font-weight: 800;
+      }
+      h3 {
+        color: $main-bg-color-op60;
+        font-weight: 400;
+        max-width: 280px;
+        text-align: center;
+      }
+  
+      error {
+          color:#dc3545;
+          height: 24px;
+      }
+    }
+  }
+  
+  .wrapperActive {
+    height: 100vh;
+    width: 100vw;
+    background-color: $main-bg-color-op40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 1s;
+  }

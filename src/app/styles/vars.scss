@@ -28,3 +28,20 @@ $color-additional-error-80: rgba(220, 38, 38, 0.8);
 $color-additional-error-60: rgba(220, 38, 38, 0.6);
 $color-additional-error-40: rgba(220, 38, 38, 0.4);
 $color-additional-error-20: rgba(220, 38, 38, 0.2);
+
+$main-color: rgba(53, 117, 226, 1);
+$main-color-op80: rgba(53, 117, 226, 0.8);
+$main-color-op60: rgba(53, 117, 226, 0.6);
+$main-color-op40: rgba(53, 117, 226, 0.4);
+$main-color-op20: rgba(53, 117, 226, 0.2);
+
+
+$main-color-hover: darken($main-color, 10%);
+
+$main-border-radius: 5px;
+
+$main-bg-color: rgba(38, 38, 38, 1);
+$main-bg-color-op80: rgba(38, 38, 38, 0.8);
+$main-bg-color-op60: rgba(38, 38, 38, 0.6);
+$main-bg-color-op40: rgba(38, 38, 38, 0.4);
+$main-bg-color-op20: rgba(38, 38, 38, 0.2);
