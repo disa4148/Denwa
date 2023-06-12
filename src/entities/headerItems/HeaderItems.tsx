@@ -1,11 +1,9 @@
 interface IHeaderItemEntry {
-  title: string
-  path: string
+  title: string;
+  path: string;
 }
 
-interface IHeaderItems {
-  [index: number]: IHeaderItemEntry
-}
+type IHeaderItems = IHeaderItemEntry[];
 
 export const headerItems: IHeaderItems = [
   {
@@ -24,4 +22,4 @@ export const headerItems: IHeaderItems = [
     title: "Resource",
     path: "/resource",
   },
-]
+];
