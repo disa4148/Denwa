@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1560px;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.buttonsWrapper {
+    display: flex;
+    max-width: 272px;
+    width: 100%;
+    justify-content: space-between;
+}

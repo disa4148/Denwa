@@ -1,11 +1,12 @@
 import { headerItems } from "src/entities/headerItems/HeaderItems"
+import styles from "./HeaderLinks.module.scss"
 // import { Link } from "react-router-dom"
 const HeaderLinks: React.FC = () => {
   return (
-    <div>
+    <div className={styles.wrapper}>
       {headerItems.map(item => (
         // <Link to={item.path}>
-          <div>{item.title}</div>
+          <div className={styles.item}>{item.title}</div>
         // </Link>
       ))}
     </div>

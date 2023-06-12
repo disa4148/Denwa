@@ -6,10 +6,10 @@
     align-items: center;
     justify-content: center;
     padding: 8px 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     border-radius: 5px;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .BtnfilledLight{
@@ -42,7 +42,7 @@
     }
 
     &:active {
-        background: $color-main-light-100;
+        background: $color-main-dark-100;
         color: white;
     }
 
