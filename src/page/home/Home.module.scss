@@ -7,11 +7,27 @@
 .welcomingWrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
   width: 100%;
-
   height: 95vh;
-  h1 {
+  h1,
+  h3 {
     text-align: center;
+    max-width: 780px;
+    width: 100%;
+  }
+  h1 {
+    margin-top: 30vh;
+  }
+  h3 {
+    margin-top: 20px;
+  }
+  .scrollButtons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 330px;
+    margin-top: 40px;
   }
 }
