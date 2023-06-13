@@ -1,24 +1,23 @@
 @import "/src/app/index.scss";
-
-
 .wrapper {
-    display: flex;
-    justify-content: space-between;
-    max-width: 400px;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1560px;
+    width: 512px;
 }
 
 .item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  
 }
 
 .item:hover {
-    color: $color-main-dark-80;
-    transition: 0.3s;
+  color: $color-main-dark-60;
+  transition: 0.3s;
 }
 
 
