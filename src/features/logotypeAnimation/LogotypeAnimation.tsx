@@ -6,7 +6,7 @@ const LogotypeAnimation: React.FC = () => {
   return (
     <Lottie
       animationData={logotypeAnimation}
-      style={{ height: "25px", width: "256px", margin: "10px" }}
+      style={{ height: "25px", width: "256px", cursor: "pointer" }}
       autoplay={true}
       loop={false}
     />

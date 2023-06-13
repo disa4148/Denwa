@@ -1,2 +1,11 @@
 @import "./styles/normalise.scss";
 @import "./styles/vars.scss";
+
+h1 {
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 85px;
+    max-width: 960px;
+  }
+  
+
