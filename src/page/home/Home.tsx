@@ -1,6 +1,6 @@
 import ToggleModal from "src/features/toggleModal/ToggleModal"
 import styles from "./Home.module.scss"
-import ScrollButton from "src/features/scrollButton/scrollButton"
+import ScrollButton from "src/features/scrollButton/ScrollButton"
 import SignUpForm from "src/shared/UI/SignUpForm/SignUpForm"
 
 const Home: React.FC = () => {
