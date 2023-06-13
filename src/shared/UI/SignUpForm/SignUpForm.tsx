@@ -6,8 +6,8 @@ import Input from '../input/Input'
 export const SignUpForm = () => {
   return (
     <form >
-    <h2>Регистрация</h2>
-    <h3>Присоединяйтесь к нашей команде!</h3>
+    <h1>Регистрация</h1>
+    <h2>Присоединяйтесь к нашей команде!</h2>
     <p>Эл-почта:</p>
     <Input type="text" placeholder="Эл-почта" />
     <p>Пароль:</p>
