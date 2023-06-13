@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.welcomingWrapper}>
-        <h1>Find Your Next Gig with Our Freelance Job Platform</h1>
+        <h1 className={styles.welcomeMainHeader}>Find Your Next Gig with Our Freelance Job Platform</h1>
         <h3>
           Streamline your freelance business with our job finder platform. Find
           opportunities, manage workloads, and maximize earnings.
