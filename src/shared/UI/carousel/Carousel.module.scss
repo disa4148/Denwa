@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75vw;
+  
+}
+
+.image {
+    width: 120px;
+    filter: grayscale(70);
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%);
+}
