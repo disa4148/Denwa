@@ -1,6 +1,8 @@
+@import "src/app/index.scss";
+
 .Input {
-    width: 250px;
-    height: 32px;
+    width: 280px;
+    height: 30px;
 
     padding-left: 8px;
 
@@ -11,3 +13,8 @@
     
     font-size: 17px;
 }
+
+.Input:focus {
+    outline: 1px solid $main-color;
+    border: 1px solid $main-color;
+  }
