@@ -1,13 +1,18 @@
 import styles from "./ProfileAdvertising.module.scss";
 
-import denwaIcon from "/public/assets/images/denwa-icon.svg";
-export const ProfileAdvertising = () => {
+interface IProfileAdvertising {
+    img: string;
+    title: string;
+    text: string;
+}
+
+export const ProfileAdvertising = ({img, title, text}: IProfileAdvertising) => {
   return (
     <div className={styles.wrapper}>
-      <img src={denwaIcon} alt='залупа' />
+      <img src={img} alt={img} />
       <div className={styles.Container}>
-        <h4>LoremAirbnb</h4>
-        <p>Category - 2021-2022</p>
+        <h4>{title}</h4>
+        <p>{text}</p>
       </div>
     </div>
   );

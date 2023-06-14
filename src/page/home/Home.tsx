@@ -7,6 +7,7 @@ import ScrollButton from "src/features/scrollButton/ScrollButton";
 import SignUpForm from "src/shared/UI/SignUpForm/SignUpForm";
 
 import DownArrow from "src/shared/UI/downArrow/DownArrow";
+import denwaIcon from "/public/assets/images/denwa-icon.svg";
 
 import { CarouselItems } from "src/entities/carouselItems/CarouselItems";
 
@@ -40,12 +41,16 @@ const Home: React.FC = () => {
       </div>
 
       <div className={styles.futuresWrapper}>
-        <div>
+        <div className={styles.leftElements}>
           <h3>Work Experience</h3>
 
           <div className={styles.profileAdvertisingWrapper}>
-            <ProfileAdvertising />
+            <ProfileAdvertising img={denwaIcon} title="LoremAirbnb" text="Category - 2021-2022"/>
+            <ProfileAdvertising img={denwaIcon} title="LoremAirbnb" text="Category - 2021-2022"/>
           </div>
+           <div >
+             <h3>Work Experience</h3>
+           </div>
         </div>
       </div>
     </div>
