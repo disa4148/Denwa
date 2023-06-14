@@ -11,6 +11,7 @@ import DownArrow from "src/shared/UI/downArrow/DownArrow";
 import { CarouselItems } from "src/entities/carouselItems/CarouselItems";
 
 import ProfileAdvertising from "src/widget/profileAdvertising/ProfileAdvertising";
+import { GroupBtnsAdvertising } from "src/widget/groupBtnsAdvertising/GroupBtnsAdvertising";
 
 import { ProfileAdverItems } from "src/entities/profileAdverItems/ProfileAdverItems";
 const Home: React.FC = () => {
@@ -57,9 +58,7 @@ const Home: React.FC = () => {
 
           <div className={styles.bottomElements}>
             <h3>Work Experience</h3>
-            <div className={styles.functionalBtns}>
-              
-            </div>
+              <GroupBtnsAdvertising />
           </div>
         </div>
       </div>

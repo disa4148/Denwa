@@ -10,7 +10,7 @@ export const ProfileAdvertising = ({img, title, description}: IProfileAdvertisin
   return (
     <div className={styles.wrapper}>
       <img src={img} alt={img} />
-      <div className={styles.Container}>
+      <div className={styles.container}>
         <h4>{title}</h4>
         <p>{description}</p>
       </div>

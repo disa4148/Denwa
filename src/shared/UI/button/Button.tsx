@@ -14,15 +14,15 @@ export const Button = ({ type, text, disabled}: IButton) => {
       )}
 
       {type === "Ghost" && (
-      <button type="submit" className={styles.BtnGhost}>{text}</button>
+      <button type="submit" disabled={disabled} className={styles.BtnGhost}>{text}</button>
       )}
 
       {type === "filledDark" && (
-        <button type="submit" className={styles.BtnfilledDark}>{text}</button>
+        <button type="submit" disabled={disabled} className={styles.BtnfilledDark}>{text}</button>
       )}
 
       {type === "notAllowedDark" && (
-        <button type="submit" className={styles.BtnnotAllowedDark}>{text}</button>
+        <button type="submit" disabled={disabled} className={styles.BtnnotAllowedDark}>{text}</button>
       )}
     </div>
   );
