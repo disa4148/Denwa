@@ -11,7 +11,7 @@ interface ICarouselItems {
 export const Carousel = ({items}: ICarouselItems) => {
   return (
     <div className={styles.wrapper}>
-        <Marquee autoFill={true} pauseOnClick={true} speed={100} gradientWidth={200}>
+        <Marquee autoFill={true} pauseOnClick={true} speed={100} gradient={true} gradientWidth={200}>
           <div className={styles.content}>
             {items.map(item => (
                 <img className={styles.image} src={item} alt='Icon' />

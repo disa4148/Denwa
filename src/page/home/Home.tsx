@@ -1,9 +1,16 @@
-import ToggleModal from "src/features/toggleModal/ToggleModal"
-import styles from "./Home.module.scss"
-import ScrollButton from "src/features/scrollButton/ScrollButton"
-import SignUpForm from "src/shared/UI/SignUpForm/SignUpForm"
-import DownArrow from "src/shared/UI/downArrow/DownArrow"
+import ToggleModal from "src/features/toggleModal/ToggleModal";
 
+import styles from "./Home.module.scss";
+
+import ScrollButton from "src/features/scrollButton/ScrollButton";
+
+import SignUpForm from "src/shared/UI/SignUpForm/SignUpForm";
+
+import DownArrow from "src/shared/UI/downArrow/DownArrow";
+
+import { CarouselItems } from "src/entities/carouselItems/CarouselItems";
+
+import ProfileAdvertising from "src/widget/profileAdvertising/profileAdvertising";
 const Home: React.FC = () => {
   return (
     <div className={styles.wrapper}>
@@ -23,13 +30,26 @@ const Home: React.FC = () => {
               form={<SignUpForm />}
             />
           </div>
-
           <ScrollButton text='Explore Denwa' type='filledDark' path='123' />
         </div>
         <DownArrow />
       </div>
-    </div>
-  )
-}
 
-export default Home
+      <div className={styles.carouselWrapper}>
+        <CarouselItems />
+      </div>
+
+      <div className={styles.futuresWrapper}>
+        <div>
+          <h3>Work Experience</h3>
+
+          <div className={styles.profileAdvertisingWrapper}>
+            <ProfileAdvertising />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;

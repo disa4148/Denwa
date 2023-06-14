@@ -1,0 +1,30 @@
+.wrapper {
+    
+    max-width: 300px !important;
+    width: 300px;
+
+    display: flex;
+
+    img {
+        width: 64px;
+        height: 64px;
+    }
+    h4 {
+        font-weight: 500;
+        line-height: 23px;
+    }
+    p {
+        font-weight: 400;
+        color: rgba(2, 2, 2, 0.6);
+    }
+}
+
+
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 5px;
+}

@@ -1,6 +1,7 @@
 .wrapper {
     display: flex;
     justify-content: center;
+    max-width: 99vw;
 }
 
 
@@ -19,4 +20,11 @@
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%); 
     -o-filter: grayscale(100%);
+    transition: all 0.5s ease;
+    &:hover {
+      filter: none !important;
+
+    }
 }
+
+
