@@ -7,11 +7,12 @@ import ScrollButton from "src/features/scrollButton/ScrollButton";
 import SignUpForm from "src/shared/UI/SignUpForm/SignUpForm";
 
 import DownArrow from "src/shared/UI/downArrow/DownArrow";
-import denwaIcon from "/public/assets/images/denwa-icon.svg";
 
 import { CarouselItems } from "src/entities/carouselItems/CarouselItems";
 
-import ProfileAdvertising from "src/widget/profileAdvertising/profileAdvertising";
+import ProfileAdvertising from "src/widget/profileAdvertising/ProfileAdvertising";
+
+import { ProfileAdverItems } from "src/entities/profileAdverItems/ProfileAdverItems";
 const Home: React.FC = () => {
   return (
     <div className={styles.wrapper}>
@@ -45,12 +46,21 @@ const Home: React.FC = () => {
           <h3>Work Experience</h3>
 
           <div className={styles.profileAdvertisingWrapper}>
-            <ProfileAdvertising img={denwaIcon} title="LoremAirbnb" text="Category - 2021-2022"/>
-            <ProfileAdvertising img={denwaIcon} title="LoremAirbnb" text="Category - 2021-2022"/>
+            {ProfileAdverItems.map(item => (
+              <ProfileAdvertising
+                img={item.image}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
           </div>
-           <div >
-             <h3>Work Experience</h3>
-           </div>
+
+          <div className={styles.bottomElements}>
+            <h3>Work Experience</h3>
+            <div className={styles.functionalBtns}>
+              
+            </div>
+          </div>
         </div>
       </div>
     </div>

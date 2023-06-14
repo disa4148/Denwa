@@ -3,16 +3,16 @@ import styles from "./ProfileAdvertising.module.scss";
 interface IProfileAdvertising {
     img: string;
     title: string;
-    text: string;
+    description: string;
 }
 
-export const ProfileAdvertising = ({img, title, text}: IProfileAdvertising) => {
+export const ProfileAdvertising = ({img, title, description}: IProfileAdvertising) => {
   return (
     <div className={styles.wrapper}>
       <img src={img} alt={img} />
       <div className={styles.Container}>
         <h4>{title}</h4>
-        <p>{text}</p>
+        <p>{description}</p>
       </div>
     </div>
   );

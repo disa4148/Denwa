@@ -3,13 +3,14 @@ import styles from "./Button.module.scss";
 interface IButton {
   type: "filledLight" | "Ghost" | "filledDark" | "notAllowedDark";
   text: string;
+  disabled?: boolean;
 }
 
-export const Button = ({ type, text }: IButton) => {
+export const Button = ({ type, text, disabled}: IButton) => {
   return (
     <div>
       {type === "filledLight" && (
-        <button type="submit" className={styles.BtnfilledLight}>{text}</button>
+        <button type="submit" disabled={disabled} className={styles.BtnfilledLight}>{text}</button>
       )}
 
       {type === "Ghost" && (
