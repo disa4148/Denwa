@@ -2,9 +2,14 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  height: 95vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .welcomingWrapper {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -36,6 +41,8 @@
 
 
 .futuresWrapper {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   width: 1560px;
   margin: 0 auto; 
  

@@ -1,18 +1,11 @@
-import ToggleModal from "src/features/toggleModal/ToggleModal";
+import ToggleModal from "src/features/toggleModal/ToggleModal"
+import styles from "./Home.module.scss"
+import ScrollButton from "src/features/scrollButton/ScrollButton"
+import SignUpForm from "src/shared/UI/SignUpForm/SignUpForm"
+import DownArrow from "src/shared/UI/downArrow/DownArrow"
+import ProfileAdvertising from "src/widget/profileAdvertising/ProfileAdvertising"
+import { ProfileAdverItems } from "src/entities/profileAdverItems/ProfileAdverItems"
 
-import styles from "./Home.module.scss";
-
-import ScrollButton from "src/features/scrollButton/ScrollButton";
-
-import SignUpForm from "src/shared/UI/SignUpForm/SignUpForm";
-
-import DownArrow from "src/shared/UI/downArrow/DownArrow";
-
-import { CarouselItems } from "src/entities/carouselItems/CarouselItems";
-
-import ProfileAdvertising from "src/widget/profileAdvertising/ProfileAdvertising";
-
-import { ProfileAdverItems } from "src/entities/profileAdverItems/ProfileAdverItems";
 const Home: React.FC = () => {
   return (
     <div className={styles.wrapper}>
@@ -36,15 +29,9 @@ const Home: React.FC = () => {
         </div>
         <DownArrow />
       </div>
-
-      <div className={styles.carouselWrapper}>
-        <CarouselItems />
-      </div>
-
       <div className={styles.futuresWrapper}>
         <div className={styles.leftElements}>
           <h3>Work Experience</h3>
-
           <div className={styles.profileAdvertisingWrapper}>
             {ProfileAdverItems.map(item => (
               <ProfileAdvertising
@@ -54,17 +41,14 @@ const Home: React.FC = () => {
               />
             ))}
           </div>
-
           <div className={styles.bottomElements}>
             <h3>Work Experience</h3>
-            <div className={styles.functionalBtns}>
-              
-            </div>
+            <div className={styles.functionalBtns}></div>
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
