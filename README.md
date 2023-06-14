@@ -14,7 +14,7 @@
 
 Склонируйте репозиторий на свой локальный компьютер:
 
-### git clone https://github.com/disa4148/Denwa.git
+ `git clone https://github.com/disa4148/Denwa.git`
 
 Перейдите в директорию проекта:
 
