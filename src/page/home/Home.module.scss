@@ -38,6 +38,8 @@
 .futuresWrapper {
    width: 1560px;
    margin: 0 auto;
+   display: flex;
+   justify-content: center;
 
    h3 {
       text-align: left;

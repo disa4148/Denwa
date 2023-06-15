@@ -9,6 +9,8 @@ import { ProfileAdverItems } from "src/entities/profileAdverItems/ProfileAdverIt
 import { GroupBtnsAdvertising } from "src/widget/groupBtnsAdvertising/GroupBtnsAdvertising"
 import WindowScroll from "src/features/windowScroll/WindowScroll"
 
+import Advantages from "src/widget/advantages/Advantages"
+
 const Home: React.FC = () => {
    return (
       <div className={styles.wrapper}>
@@ -53,6 +55,10 @@ const Home: React.FC = () => {
                   <h3>Work Experience</h3>
                   <GroupBtnsAdvertising />
                </div>
+            </div>
+
+             <div className={styles.rightElements}>
+               <Advantages />
             </div>
          </div>
       </div>
