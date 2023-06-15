@@ -1,24 +1,37 @@
-import { useEffect } from "react"
+import React, { useEffect } from 'react';
 
 const WindowScroll = () => {
-   const handleScroll = (event: WheelEvent) => {
-      event.preventDefault()
-      const deltaY = Math.sign(event.deltaY)
-      const nextScrollPosition = window.scrollY + window.innerHeight * deltaY
+  let isScrolling = false;
+
+  const handleScroll = (event: WheelEvent) => {
+    event.preventDefault();
+
+    if (!isScrolling) {
+      isScrolling = true;
+
+      const deltaY = Math.sign(event.deltaY);
+      const nextScrollPosition = window.scrollY + window.innerHeight * deltaY;
+
       window.scrollTo({
-         top: nextScrollPosition,
-         behavior: "smooth",
-      })
-   }
+        top: nextScrollPosition,
+        behavior: 'smooth',
+      });
 
-   useEffect(() => {
-      window.addEventListener("wheel", handleScroll, { passive: false })
-      return () => {
-         window.removeEventListener("wheel", handleScroll)
-      }
-   }, [])
+      setTimeout(() => {
+        isScrolling = false;
+      }, 5); // Задержка в 1 секунду между прокрутками
+    }
+  };
 
-   return null
-}
+  useEffect(() => {
+    window.addEventListener('wheel', handleScroll, { passive: false });
 
-export default WindowScroll
+    return () => {
+      window.removeEventListener('wheel', handleScroll);
+    };
+  }, []);
+
+  return null;
+};
+
+export default WindowScroll;
