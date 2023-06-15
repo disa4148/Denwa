@@ -1,70 +1,57 @@
 .wrapper {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  height: 95vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   height: 95vh;
 }
 
 .welcomingWrapper {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  max-width: 1560px;
-  width: 100%;
-  height: 95vh;
-  margin: 0 auto;
-  h1,
-  h3 {
-    text-align: center;
-    max-width: 780px;
-    width: 100%;
-  }
-  .welcomeMainHeader {
-    margin-top: 30vh;
-  }
-  h3 {
-    margin-top: 20px;
-  }
-  .scrollButtons {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 330px;
-    margin-top: 40px;
-  }
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   max-width: 1560px;
+   width: 100%;
+   height: 95vh;
+   margin: 0 auto;
+   h1,
+   h3 {
+      text-align: center;
+      max-width: 780px;
+      width: 100%;
+   }
+   .welcomeMainHeader {
+      margin-top: 30vh;
+   }
+   h3 {
+      margin-top: 20px;
+   }
+   .scrollButtons {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 330px;
+      margin-top: 40px;
+   }
 }
 
-
 .futuresWrapper {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  width: 1560px;
-  margin: 0 auto; 
- 
+   width: 1560px;
+   margin: 0 auto;
 
-  h3{
-    text-align: left;
-    font-weight: 600;
+   h3 {
+      text-align: left;
+      font-weight: 600;
+   }
 
-  }
+   .profileAdvertisingWrapper {
+      display: flex;
+      flex-direction: column;
+   }
 
-  .profileAdvertisingWrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bottomElements {
-    margin-top: 20px;
-    margin-left: 125px;
-    width: 320px;
-
-
-  }
-
- 
+   .bottomElements {
+      margin-top: 20px;
+      margin-left: 125px;
+      width: 320px;
+   }
 }
