@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 const WindowScroll = () => {
   let isScrolling = false;
@@ -19,7 +19,7 @@ const WindowScroll = () => {
 
       setTimeout(() => {
         isScrolling = false;
-      }, 5); // Задержка в 1 секунду между прокрутками
+      }, 10);
     }
   };
 
@@ -29,6 +29,7 @@ const WindowScroll = () => {
     return () => {
       window.removeEventListener('wheel', handleScroll);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return null;
