@@ -1,9 +1,19 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    h1 {
-        width: 570px;
-        line-height: 75px;
+    margin-left: 150px;
+    h2 {
+        max-width: 570px;
+        line-height: 54px;
+    }
+    h4 {
+        max-width: 570PX;
+        font-weight: 500;
+        text-align: left;
+
+        margin-top: 20px;
+
+        padding-bottom: 10px;
     }
     
 }

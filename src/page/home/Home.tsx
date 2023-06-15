@@ -9,6 +9,8 @@ import { ProfileAdverItems } from "src/entities/profileAdverItems/ProfileAdverIt
 import { GroupBtnsAdvertising } from "src/widget/groupBtnsAdvertising/GroupBtnsAdvertising"
 import WindowScroll from "src/features/windowScroll/WindowScroll"
 
+import { CarouselItems } from "src/entities/carouselItems/CarouselItems"
+
 import Advantages from "src/widget/advantages/Advantages"
 
 const Home: React.FC = () => {
@@ -37,29 +39,34 @@ const Home: React.FC = () => {
                   path='123'
                />
             </div>
-            <DownArrow />
+            <DownArrow marginTop={"38vh"} />
          </div>
-         <div className={styles.futuresWrapper}>
-            <div className={styles.leftElements}>
-               <h3>Work Experience</h3>
-               <div className={styles.profileAdvertisingWrapper}>
-                  {ProfileAdverItems.map(item => (
-                     <ProfileAdvertising
-                        img={item.image}
-                        title={item.title}
-                        description={item.description}
-                     />
-                  ))}
-               </div>
-               <div className={styles.bottomElements}>
-                  <h3>Work Experience</h3>
-                  <GroupBtnsAdvertising />
-               </div>
-            </div>
 
-             <div className={styles.rightElements}>
-               <Advantages />
+         <div className={styles.futuresWrapper}>
+            <CarouselItems />
+            <div className={styles.podWrapper}>
+               <div className={styles.leftElements}>
+                  <h3>Work Experience</h3>
+                  <div className={styles.profileAdvertisingWrapper}>
+                     {ProfileAdverItems.map(item => (
+                        <ProfileAdvertising
+                           img={item.image}
+                           title={item.title}
+                           description={item.description}
+                        />
+                     ))}
+                  </div>
+                  <div className={styles.bottomElements}>
+                     <h3>Work Experience</h3>
+                     <GroupBtnsAdvertising />
+                  </div>
+               </div>
+
+               <div className={styles.rightElements}>
+                  <Advantages />
+               </div>
             </div>
+            <DownArrow marginTop={"38vh"} />
          </div>
       </div>
    )

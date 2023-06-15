@@ -19,5 +19,11 @@ export const ProfileAdverItems: IProfileAdver = [
         title: "LoremAirBnb",
         description: "Category - 2021-2022"
     },
+    {
+        image: denwaIcon,
+        title: "LoremAirBnb",
+        description: "Category - 2021-2022"
+    },
+  
     
 ]

@@ -1,0 +1,22 @@
+@import 'src/app/index.scss';
+.wrapper {
+    display: flex;
+    align-items: center;
+
+    margin-top: 10px;
+
+    h3 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 15px;
+    }
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+
+    background-color: $color-main-light-100;
+
+    border-radius: 50%;
+}

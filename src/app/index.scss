@@ -9,7 +9,13 @@ h1 {
 }
 
 h2 {
-  // not working...
+  
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 75px;
+
 }
 
 h3 {
@@ -23,7 +29,7 @@ h3 {
 h4 {
   font-weight: medium;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 24px;
   max-width: 960px;
   letter-spacing: -0.04em;
 }
