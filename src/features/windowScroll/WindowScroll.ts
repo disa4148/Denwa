@@ -19,7 +19,7 @@ const WindowScroll = () => {
 
       setTimeout(() => {
         isScrolling = false;
-      }, 10); // Задержка в 1 секунду между прокрутками
+      }, 10);
     }
   };
 
@@ -29,6 +29,7 @@ const WindowScroll = () => {
     return () => {
       window.removeEventListener('wheel', handleScroll);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return null;
