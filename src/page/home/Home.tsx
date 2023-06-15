@@ -7,12 +7,10 @@ import ProfileAdvertising from "src/widget/profileAdvertising/ProfileAdvertising
 import { ProfileAdverItems } from "src/entities/profileAdverItems/ProfileAdverItems"
 
 import { GroupBtnsAdvertising } from "src/widget/groupBtnsAdvertising/GroupBtnsAdvertising"
-import WindowScroll from "src/features/windowScroll/WindowScroll"
 
 const Home: React.FC = () => {
    return (
       <div className={styles.wrapper}>
-         <WindowScroll />
          <div className={styles.welcomingWrapper}>
             <h1 className={styles.welcomeMainHeader}>
                Find Your Next Gig with Our Freelance Job Platform
