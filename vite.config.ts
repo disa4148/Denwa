@@ -10,4 +10,7 @@ export default defineConfig({
       entities: '/src/entities',
     }
   },
+  build: {
+    outDir: 'build',
+  },
 })
