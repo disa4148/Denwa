@@ -1,16 +1,18 @@
 import { headerItems } from "src/entities/headerItems/HeaderItems"
 import styles from "./HeaderLinks.module.scss"
-// import { Link } from "react-router-dom"
+
+import { Link } from "react-router-dom";
+
 const HeaderLinks: React.FC = () => {
-  return (
-    <div className={styles.wrapper}>
-      {headerItems.map(item => (
-        // <Link to={item.path}>
-          <div className={styles.item}>{item.title}</div>
-        // </Link>
-      ))}
-    </div>
-  )
+   return (
+      <div className={styles.wrapper}>
+         {headerItems.map(item => (
+            <div className={styles.item} key={item.path}>
+               <Link to={item.path}>{item.title}</Link>
+            </div>
+         ))}
+      </div>
+   )
 }
 
-export default HeaderLinks
+export default HeaderLinks;
