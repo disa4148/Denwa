@@ -1,23 +1,63 @@
 @import "/src/app/index.scss";
 .wrapper {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1560px;
-    width: 512px;
+   display: flex;
+   justify-content: space-between;
+   max-width: 1560px;
+   width: 512px;
 }
 
 .item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 18px;
-  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   font-size: 18px;
+   text-decoration: none;
+   color: black;
+   width: auto;
+   position: relative;
 }
 
 .item:hover {
-  color: $color-main-dark-60;
-  transition: 0.3s;
+   color: $color-main-dark-80;
+   transition: 0.3s;
 }
 
+a {
+   text-decoration: none;
+   background-image: linear-gradient(currentColor, currentColor);
+   background-position: 0% 100%;
+   background-repeat: no-repeat;
+   background-size: 0% 2px;
+   transition: background-size 0.3s;
+}
 
+a {
+   display: inline-block;
+   color: black;
+   line-height: 1;
+   text-decoration: none;
+   cursor: pointer;
+   position: relative;
+}
+a:after {
+   margin-top: 1px;
+   display: block;
+   content: "";
+   background-color: $color-main-dark-60;
+   height: 1px;
+   width: 0%;
+   left: 50%;
+   top: 100%;
+   position: absolute;
+   -webkit-transition: width 0.3s ease-in-out;
+   -moz--transition: width 0.3s ease-in-out;
+   transition: width 0.3s ease-in-out;
+   -webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   transform: translateX(-50%);
+}
+a:hover:after,
+a:focus:after {
+   width: 100%;
+}
