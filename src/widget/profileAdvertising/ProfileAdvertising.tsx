@@ -1,20 +1,22 @@
 import styles from "./ProfileAdvertising.module.scss";
 
-interface IProfileAdvertising {
-    img: string;
-    title: string;
-    description: string;
-}
+import { ProfileAdverItems } from "src/entities/profileAdverItems/ProfileAdverItems";
 
-export const ProfileAdvertising = ({img, title, description}: IProfileAdvertising) => {
+export const ProfileAdvertising = () => {
   return (
     <div className={styles.wrapper}>
-      <img src={img} alt={img} />
-      <div className={styles.container}>
-        <h4>{title}</h4>
-        <p>{description}</p>
-      </div>
+      {ProfileAdverItems.map (item => (
+        <div className={styles.flexDiv}>
+          <img src = {item.image} alt={item.image}/>
+          <div className={styles.container}> 
+            <h4>{item.title}</h4>
+            <p>{item.description}</p>
+          </div>
+        </div>
+        ))}
+
     </div>
+    
   );
 };
 

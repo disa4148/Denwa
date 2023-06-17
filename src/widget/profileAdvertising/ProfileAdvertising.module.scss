@@ -3,7 +3,7 @@
     max-width: 300px !important;
     width: 300px;
 
-    display: flex;
+    
 
     img {
         width: 64px;
@@ -27,4 +27,9 @@
     justify-content: center;
 
     margin-left: 5px;
+}
+
+.flexDiv {
+    display: flex;
+    flex-direction: row;
 }

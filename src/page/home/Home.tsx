@@ -48,13 +48,7 @@ const Home: React.FC = () => {
                <div className={styles.leftElements}>
                   <h3>Work Experience</h3>
                   <div className={styles.profileAdvertisingWrapper}>
-                     {ProfileAdverItems.map(item => (
-                        <ProfileAdvertising
-                           img={item.image}
-                           title={item.title}
-                           description={item.description}
-                        />
-                     ))}
+                     <ProfileAdvertising/>
                   </div>
                   <div className={styles.bottomElements}>
                      <h3>Work Experience</h3>
