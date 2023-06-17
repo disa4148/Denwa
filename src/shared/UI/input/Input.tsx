@@ -6,9 +6,10 @@ interface IInputProps {
    name: string
    type: "text" | "password" | "email"
    placeholder: string
+   required?: true
 }
 
-const Input: React.FC<IInputProps> = ({ name, type, placeholder }) => {
+const Input: React.FC<IInputProps> = ({ name, type, placeholder, required }) => {
    const { field } = useController({ name })
 
    return (
@@ -16,6 +17,7 @@ const Input: React.FC<IInputProps> = ({ name, type, placeholder }) => {
          <input
             type={type}
             placeholder={placeholder}
+            required={required}
             {...field}
             className={styles.Input}
          />
