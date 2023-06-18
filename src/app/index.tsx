@@ -5,6 +5,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom"
 
 import { store } from "./store/store"
 import { Provider } from "react-redux"
+import Alert from "src/shared/UI/alert/Alert"
 
 function App() {
    const Errrrror = <h1>404</h1>
@@ -13,10 +14,10 @@ function App() {
          <Provider store={store}>
             <BrowserRouter>
                <Header />
+               <Alert/>
                <Routes>
                   <Route element={Errrrror} path='*' />
                   <Route element={<Home />} path='/' />
-                
                </Routes>
             </BrowserRouter>
          </Provider>

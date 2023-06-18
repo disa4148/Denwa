@@ -7,9 +7,9 @@ interface IToggleAlert {
    message: string | null
 }
 
-const ToggleAlert = ({ type, title, message }: IToggleAlert) => {
+const useAlert = ({ type, title, message }: IToggleAlert) => {
    const dispatch = useDispatch()
-   dispatch(createAlert({ type: type, title: title, message: message }))
+   return dispatch(createAlert({ type: type, title: title, message: message }))
 }
 
-export default ToggleAlert
+export default useAlert

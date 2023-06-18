@@ -1,5 +1,5 @@
 import Button from "src/shared/UI/button/Button"
-import ToggleAlert from "../createAlert/ToggleAlert"
+import useAlert from "../createAlert/useAlert"
 
 interface IScrollButtonSettings {
    type: "filledLight" | "Ghost" | "filledDark" | "notAllowedDark"
@@ -9,12 +9,10 @@ interface IScrollButtonSettings {
 
 export const ScrollButton = ({ type, text, path }: IScrollButtonSettings) => {
    
-  ToggleAlert({ type: "error", message: "123", title: "1233333ttle" })
    const scrollTo = (path: string) => {
-      console.log({ path })
+      console.log(path)
       
    }
-
    return (
       <div>
          <div onClick={() => scrollTo(path)}>

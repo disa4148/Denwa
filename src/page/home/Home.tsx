@@ -48,7 +48,7 @@ const Home: React.FC = () => {
                <div className={styles.leftElements}>
                   <h3>Work Experience</h3>
                   <div className={styles.profileAdvertisingWrapper}>
-                     <ProfileAdvertising/>
+                     <ProfileAdvertising />
                   </div>
                   <div className={styles.bottomElements}>
                      <h3>Work Experience</h3>
