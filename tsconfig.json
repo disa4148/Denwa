@@ -23,7 +23,13 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true, // Включает строгую проверку на null и undefined
+    "strictFunctionTypes": true, // Включает строгую проверку типов функций
+    "strictPropertyInitialization": true, // Включает строгую проверку инициализации свойств классов
+    "noImplicitThis": true, // Запрещает неявный тип this
+    "noUnusedLocals": true, // Предупреждает о неиспользуемых локальных переменных
+    "noUnusedParameters": true // Предупреждает о неиспользуемых параметрах функций
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
