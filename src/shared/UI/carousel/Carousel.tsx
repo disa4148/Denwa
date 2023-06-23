@@ -14,7 +14,7 @@ export const Carousel = ({items}: ICarouselItems) => {
         <Marquee autoFill={true} pauseOnClick={true} speed={100} gradient={true} gradientWidth={200}>
           <div className={styles.content}>
             {items.map(item => (
-                <img className={styles.image} src={item} alt='Icon' />
+                <img key={item} className={styles.image} src={item} alt='Icon' />
             ))}
           </div>
         </Marquee>

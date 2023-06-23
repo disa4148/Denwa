@@ -10,7 +10,7 @@ const Alert = () => {
          <div className={styles.centered}>
             <div className={styles.content}>
                <BiCheckDouble size='4em' color='rgb(53, 117, 226)' />
-               <h1>Ура, ебало разьебало</h1>
+               <h1>Ура, ебало разьебало, {alert.message}</h1>
                <h2>Вы успешно ебнулись с крыши</h2>
             </div>
          </div>

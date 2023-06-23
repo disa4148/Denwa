@@ -15,8 +15,8 @@ export const Advantages = () => {
             sed do eiusmod tempor incididunt ut labore et dolore 
             magna aliqua. Ut enim ad minim veniam
         </h4>
-        {ListItems.map((item) => (
-          <List text={item}/>
+        {ListItems.map((item, index) => (
+          <List text={item} key={index}/>
         ))}
         
     </div>
