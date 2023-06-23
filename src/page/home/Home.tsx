@@ -36,13 +36,13 @@ const Home: React.FC = () => {
                <ScrollButton
                   text='Explore Denwa'
                   type='filledDark'
-                  path='123'
+                  path='futuresWrapper'
                />
             </div>
             <DownArrow marginTop={"38vh"} />
          </div>
 
-         <div className={styles.futuresWrapper}>
+         <div className={styles.futuresWrapper} id="futuresWrapper">
             <CarouselItems />
             <div className={styles.podWrapper}>
                <div className={styles.leftElements}>
