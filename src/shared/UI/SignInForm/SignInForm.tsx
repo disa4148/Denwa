@@ -6,7 +6,6 @@ export const SignInForm = () => {
    const methods = useForm()
    const onSubmit = (data: any, event: any) => {
       event.preventDefault()
-
       console.log(data)
    }
 
@@ -18,7 +17,7 @@ export const SignInForm = () => {
             <p>Эл-почта:</p>
             <Input type='email' placeholder='Email' name='email' />
             <p>Пароль:</p>
-            <Input type='password' placeholder='Пароль' name='password'/>
+            <Input type='password' placeholder='Пароль' name='password' />
             <Button type='filledLight' text='Войти' />
          </form>
       </FormProvider>
