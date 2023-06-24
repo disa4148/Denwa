@@ -1,0 +1,71 @@
+.wrapper {
+    max-width: 300px !important;
+    width: 300px;
+
+    img {
+        width: 72px;
+        height: 72px;
+    }
+    h4 {
+        font-weight: 400;
+        line-height: 23px;
+        color: rgba(11, 9, 10, 0.4);
+    }
+    h3 {
+        font-weight: 600;
+    }
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 5px;
+}
+
+.flexDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.specialty {
+    font-weight: 600;
+    font-size: 19px;
+
+    line-height: 20px;
+}
+
+.rangeSalaryWrapp {
+    p, span {
+        color: rgba(2, 2, 2, 0.6);
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+.description {
+    margin-top: 8px;
+    color: rgba(2, 2, 2, 0.6);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.groupBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    max-width: 350px;
+
+    margin-top: 10px;
+
+
+    button {
+        
+        padding: 5px;
+        font-size: 12px
+    }
+}

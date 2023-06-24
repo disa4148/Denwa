@@ -4,7 +4,6 @@ import ScrollButton from "src/features/scrollButton/ScrollButton"
 import SignUpForm from "src/shared/UI/SignUpForm/SignUpForm"
 import DownArrow from "src/shared/UI/downArrow/DownArrow"
 import ProfileAdvertising from "src/widget/profileAdvertising/ProfileAdvertising"
-import { ProfileAdverItems } from "src/entities/profileAdverItems/ProfileAdverItems"
 
 import { GroupBtnsAdvertising } from "src/widget/groupBtnsAdvertising/GroupBtnsAdvertising"
 import WindowScroll from "src/features/windowScroll/WindowScroll"
@@ -12,6 +11,9 @@ import WindowScroll from "src/features/windowScroll/WindowScroll"
 import { CarouselItems } from "src/entities/carouselItems/CarouselItems"
 
 import Advantages from "src/widget/advantages/Advantages"
+
+import CreateResumeInfo from "src/widget/createResumeInfo/CreateResumeInfo"
+import SalaryEstimilate from "src/widget/salaryEstimilate/SalaryEstimilate"
 
 const Home: React.FC = () => {
    return (
@@ -61,6 +63,14 @@ const Home: React.FC = () => {
                </div>
             </div>
             <DownArrow marginTop={"38vh"} />
+         </div>
+
+         <div className={styles.createResumeInfoWrapper}>
+            <CreateResumeInfo />
+            <div className={styles.flexWrap}>
+               <h4>Salary Estimilate</h4>
+               <SalaryEstimilate />
+            </div>
          </div>
       </div>
    )

@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 700px;
+
+    h2 {
+        line-height: 60px;
+    }
+
+    h3 {
+        margin-top: 20px;
+
+
+        width: 520px;
+
+        line-height: 22px;
+
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 12px 20px;
+    }
+}
