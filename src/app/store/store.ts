@@ -1,12 +1,16 @@
-import { configureStore } from "@reduxjs/toolkit"
-import alertSlice from "./slices/alertSlice"
+import { combineReducers, configureStore } from "@reduxjs/toolkit"
+import alertReducer from "./slices/alertSlice"
 
-
-export const store = configureStore({
-   reducer: {
-      alert: alertSlice
-   },
+const rootReducer = combineReducers({
+   alertReducer,
 })
 
+export const setupStore = () => {
+   return configureStore({
+      reducer: rootReducer,
+   })
+}
 
-
+export type RootState = ReturnType<typeof rootReducer>
+export type AppStore = ReturnType<typeof setupStore>
+export type AppDispatch = AppStore["dispatch"]

@@ -19,12 +19,12 @@ export const alertSlice = createSlice({
          state.type = action.payload.type
          state.message = action.payload.message
       },
-      nullifyAlert: (state) => {
+      nullifyAlert: state => {
          state.type = initialState.type
          state.message = initialState.message
       },
    },
 })
 
-export const {createAlert, nullifyAlert} = alertSlice.actions
+export const { createAlert, nullifyAlert } = alertSlice.actions
 export default alertSlice.reducer

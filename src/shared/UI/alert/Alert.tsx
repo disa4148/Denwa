@@ -1,21 +1,22 @@
 import { useEffect } from "react"
 import styles from "./Alert.module.scss"
-import { useDispatch, useSelector } from "react-redux"
 import { BiCommentCheck } from "react-icons/bi"
 import { BiCommentDots } from "react-icons/bi"
 import { BiCommentError } from "react-icons/bi"
 import { BiCommentX } from "react-icons/bi"
 import { nullifyAlert } from "src/app/store/slices/alertSlice"
+import { useAppDispatch, useAppSelector } from "src/app/store/hooks/redux"
 
 const Alert = () => {
-   const alert = useSelector((state:any ) => state.alert)
-   const dispatch = useDispatch()
+   const alert = useAppSelector((state => state.alertReducer))
+   const dispatch = useAppDispatch()
    useEffect(() => {
       const timer = setTimeout(() => {
          clearTimeout(timer)
          dispatch(nullifyAlert())
+         console.log("alert nullified")
       }, 3000)
-   }, [alert, dispatch])
+   }, [alert])
 
    return (
       <>
