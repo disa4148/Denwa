@@ -1,0 +1,47 @@
+@import "src/app/index.scss";
+.wrapper {
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 95vh;
+   width: 100vw;
+
+   .errorWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+         font-size: 200px;
+         line-height: 200px;
+      }
+      img {
+         height: 135px;
+      }
+   }
+
+   .paragraph {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      max-height: 200px;
+      height: 100%;
+      p {
+         font-size: 24px;
+         text-align: center;
+         max-width: 70%;
+         color: $main-bg-color-op60;
+      }
+   }
+   .link {
+      a:hover {
+         text-decoration: none;
+      }
+      a:after {
+         display: none;
+      }
+   }
+}
