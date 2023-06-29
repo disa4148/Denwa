@@ -3,11 +3,10 @@ import app from './app';
 
 const PORT = process.env.PORT || 3001;
 
-app.listen(PORT, async (req: any, res: any) => {
-    try {
-        console.log("Hello typescript");
-    } catch (error) {
-        console.log(error);
-    }
-    console.log(`Server is working on ${PORT} port`)
-});
+try {
+    app.listen(PORT, async (req: any, res: any) => {
+        console.log(`Server is working on ${PORT} port`)
+    });
+} catch (error) {
+    console.log(error);
+}
