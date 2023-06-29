@@ -3,6 +3,7 @@ import Button from "../button/Button"
 import Input from "../input/Input"
 import { useForm, FormProvider } from "react-hook-form"
 import { createAlert } from "src/app/store/slices/alertSlice"
+
 export const SignUpForm = () => {
    const methods = useForm()
    const dispatch = useAppDispatch()
