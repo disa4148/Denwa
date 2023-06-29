@@ -1,7 +1,7 @@
 require('dotenv').config();
 import app from './app';
 
-const PORT: number | string = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, async (req: any, res: any) => {
     try {

@@ -5,4 +5,4 @@ const userControllers = require('../Controllers/userControllers')
 
 router.get('/', userControllers.getAll)
 
-export default router;
+export default router
