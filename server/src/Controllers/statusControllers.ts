@@ -6,7 +6,10 @@ module.exports = {
             const allStatuses = await db.query('SELECT * FROM statuses')
             res.json(allStatuses.rows)
         } catch (error: any) {
-            throw new Error(error);
+            console.log(error)
+            res.json({
+                message: "Ошибка поиске всех статусов"
+            })
         }
     },
     getById: async(req: any, res: any) => {
@@ -15,25 +18,30 @@ module.exports = {
             const statusById = await db.query('SELECT * FROM statuses WHERE statusid = $1', [idStatus])
             res.json(statusById.rows[0])
         } catch (error: any) {
-            throw new Error(error);
+            console.log(error)
+            res.json({
+                message: "Ошибка поиске статуса по id"
+            })
         }
     },
     createStatus: async(req: any, res: any) => {
         try {
             const { statusname } = req.body
-            if (statusname != null) {
+
                 const createStatus = await db.query('INSERT INTO statuses (statusname) values ($1) RETURNING *', [statusname])
                 res.json({
                     message: "Статус успешно создан"
                 })
-            } else {
+
                 res.json({
                     message: "Значение статуса пустое"
                 })
-            }
+
         } catch (error: any) {
-            throw new Error(error);
-            
+            console.log(error)
+            res.json({
+                message: "Ошибка при добавлении статуса"
+            })
         }
     },
     deleteStatus: async(req: any, res: any) => {
@@ -44,8 +52,10 @@ module.exports = {
                 message: "Статус успешно удалён"
             })
         } catch (error: any) {
-            throw new Error(error);
-            
+            console.log(error)
+            res.json({
+                message: "Ошибка при удалении статуса"
+            })
         }
     }
 }

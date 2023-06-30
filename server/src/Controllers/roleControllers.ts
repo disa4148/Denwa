@@ -6,7 +6,10 @@ module.exports = {
             const allRoles = await db.query('SELECT * FROM roles')
             res.json(allRoles.rows)
         } catch (error: any) {
-            throw new Error(error);
+            console.log(error)
+            res.json({
+                message: "Ошибка при поиске всех ролей"
+            })
         }
     },
     getbyId: async(req: any, res: any) => {
@@ -15,24 +18,27 @@ module.exports = {
             const roleById = await db.query('SELECT * FROM roles WHERE roleid = $1', [idRole])
             res.json(roleById.rows[0])
         } catch (error: any) {
-            throw new Error(error);
+            console.log(error)
+            res.json({
+                message: "Ошибка при поиске роли по id"
+            })
         }
     },
     createRole: async(req: any, res: any) => {
         try {
             const { rolename } = req.body
-            if (rolename != null) {
                 const createRole = await db.query('INSERT INTO roles (rolename) values ($1) RETURNING *', [rolename])
                 res.json({
                     message: "Роль успешно создана"
                 })
-            } else {
                 res.json({
                     message: "Значение роли пустое"
                 })
-            }
         } catch (error: any) {
-            throw new Error(error);
+            console.log(error)
+            res.json({
+                message: "Ошибка при добавлении роли"
+            })
         }
     },
     deleteRole: async(req: any, res: any) => {
@@ -43,7 +49,10 @@ module.exports = {
                 message: "Роль успешно удалена"
             })
         } catch (error: any) {
-            throw new Error(error);
+            console.log(error)
+            res.json({
+                message: "Ошибка при удалении роли"
+            })
         }
     }
 }
