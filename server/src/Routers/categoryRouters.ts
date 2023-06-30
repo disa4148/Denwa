@@ -8,6 +8,6 @@ router.get('/:id', categoryControllers.getById)
 
 router.post('/', categoryControllers.addCategory)
 
-router.delete('/:id', categoryControllers.deleteById)
+router.delete('/:id', categoryControllers.deleteCategory)
 
 export default router

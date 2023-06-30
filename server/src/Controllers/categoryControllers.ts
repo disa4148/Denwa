@@ -1,4 +1,4 @@
-const db = require('../db')
+import db from '../db';
 
 module.exports = {
     getAll: async(req: any, res: any) => {
@@ -38,7 +38,7 @@ module.exports = {
             throw new Error(error);
         }
     },
-    deleteById: async(req: any, res: any) => {
+    deleteCategory: async(req: any, res: any) => {
         try {
                 const idCateogory: number = req.params.id
                 const categoryById = await db.query('DELETE FROM categories where categoryid = $1', [idCateogory])
@@ -48,6 +48,5 @@ module.exports = {
         } catch (error: any) {
             throw new Error(error);   
         }
- 
     }
 }
