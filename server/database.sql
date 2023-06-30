@@ -8,3 +8,7 @@ create TABLE roles(
     rolename varchar(255) not null
 );
 
+create TABLE statuses(
+    statusid SERIAL PRIMARY KEY,
+    statusname varchar(255) not null
+);
