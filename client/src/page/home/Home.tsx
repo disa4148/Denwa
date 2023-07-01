@@ -43,7 +43,7 @@ const Home: React.FC = () => {
             <DownArrow marginTop={"38vh"} />
          </div>
 
-         <div className={styles.futuresWrapper} id="futuresWrapper">
+         <div className={styles.futuresWrapper} id='futuresWrapper'>
             <CarouselItems />
             <div className={styles.podWrapper}>
                <div className={styles.leftElements}>
@@ -65,11 +65,14 @@ const Home: React.FC = () => {
          </div>
 
          <div className={styles.createResumeInfoWrapper}>
-            <CreateResumeInfo />
-            <div className={styles.flexWrap}>
-               <h4>Salary Estimilate</h4>
-               <SalaryEstimilate />
+            <div className={styles.resumeWrapper}>
+               <CreateResumeInfo />
+               <div className={styles.flexWrap}>
+                  <h4>Salary Estimilate</h4>
+                  <SalaryEstimilate />
+               </div>
             </div>
+            <DownArrow marginTop={"20vh"} />
          </div>
       </div>
    )
