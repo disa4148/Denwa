@@ -10,8 +10,6 @@ import MongoDbIcon from '/assets/images/mongodb-icon.svg'
 export const CarouselItems = () => {
     const items = [ReactIcon, TsIcon, HtmlIcon, NodeJsIcon, MongoDbIcon]
   return (
-   
     <Carousel items={items}/>
-  
   )
 }

@@ -11,18 +11,18 @@ type IProfileAdver = IProfileAdverEntry[];
 export const ProfileAdverItems: IProfileAdver = [
     {
         image: denwaIcon,
-        title: "LoremAirBnb",
-        description: "Category - 2021-2022"
+        title: "Сергиенко Евгений",
+        description: "Backend Developer"
     },
     {
         image: denwaIcon,
-        title: "LoremAirBnb",
-        description: "Category - 2021-2022"
+        title: "Коваленко Родион",
+        description: " Frontend Developer"
     },
     {
         image: denwaIcon,
-        title: "LoremAirBnb",
-        description: "Category - 2021-2022"
+        title: "Денис Николаенко",
+        description: "Data Science Engineer"
     },
   
     

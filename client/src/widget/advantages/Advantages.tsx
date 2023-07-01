@@ -8,12 +8,11 @@ import { ListItems } from 'src/entities/listItems/ListItems'
 export const Advantages = () => {
   return (
     <div className={styles.wrapper}>
-        <h2>Streamline Your Job 
-            with Advanced
+        <h2>Оптимизируйте свою работу с Denwa!
         </h2>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore 
-            magna aliqua. Ut enim ad minim veniam
+        <h4>Проект Denwa - это инновационная фриланс-биржа, созданная
+           с целью облегчить процесс поиска работы и нахождения
+            талантливых фрилансеров
         </h4>
         {ListItems.map((item, index) => (
           <List text={item} key={index}/>

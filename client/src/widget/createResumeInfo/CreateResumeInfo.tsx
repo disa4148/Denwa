@@ -4,15 +4,16 @@ export const CreateResumeInfo = () => {
   return (
     <div className={styles.wrapper}>
         <h2>
-            Create a Winning Resume
-            With Integrated Builder
+          Создайте резюме для 
+          поиска работы
         </h2>
         <h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam.
+         Наша цель - помочь вам выделиться из толпы соискателей
+         и увеличить ваши шансы на успешное трудоустройство. 
+         Начните создавать свое резюме сейчас и откройте двери к 
+         новым возможностям в вашей карьере.
         </h3>
-        <Button text='Create Resume' type='filledLight'/>
+        <Button text='Создать резюме' type='filledLight'/>
 
     </div>
   )

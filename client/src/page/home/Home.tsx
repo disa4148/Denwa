@@ -21,25 +21,24 @@ const Home: React.FC = () => {
          <WindowScroll />
          <div className={styles.welcomingWrapper}>
             <h1 className={styles.welcomeMainHeader}>
-               Find Your Next Gig with Our Freelance Job Platform
+            Найдите работу на нашей платформе для фрилансеров.
             </h1>
             <h3>
-               Streamline your freelance business with our job finder platform.
-               Find opportunities, manage workloads, and maximize earnings.
+               Добивайтесь большего успеха в фрилансе благодаря нашей простой, удобной и эффективной платформе поиска работы.
             </h3>
             <div className={styles.scrollButtons}>
                <div className={styles.modalButton}>
                   <ToggleModal
                      type='filledLight'
-                     text='Start free trial'
+                     text='Пробный период'
                      form={<SignUpForm />}
                   />
                </div>
-               <ScrollButton
-                  text='Explore Denwa'
-                  type='filledDark'
-                  path='futuresWrapper'
-               />
+                  <ScrollButton
+                     text='Попробовать Denwa'
+                     type='filledDark'
+                     path='futuresWrapper'
+                  />
             </div>
             <DownArrow marginTop={"38vh"} />
          </div>
@@ -48,12 +47,12 @@ const Home: React.FC = () => {
             <CarouselItems />
             <div className={styles.podWrapper}>
                <div className={styles.leftElements}>
-                  <h3>Work Experience</h3>
+                  <h3>Лучшие исполнители</h3>
                   <div className={styles.profileAdvertisingWrapper}>
                      <ProfileAdvertising />
                   </div>
                   <div className={styles.bottomElements}>
-                     <h3>Work Experience</h3>
+                     <h3>Категории работ</h3>
                      <GroupBtnsAdvertising />
                   </div>
                </div>
